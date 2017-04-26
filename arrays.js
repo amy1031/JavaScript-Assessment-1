@@ -1,7 +1,8 @@
 //1. What is the lenth of the following contacts array?
 
-var contacts = [];
 
+var contacts = [];
+console.log(contacts.length);
 
 //2. Add the following people to the contacts array.
 
@@ -9,7 +10,7 @@ var jake = {
 	name: 'Jake Overall',
 	email: 'jake.overall@boisecodeworks.com',
 	title: 'founder'
-};
+}; 
 var matt = {
 	name: 'Matt Overall',
 	email: 'matt.overall@boisecodeworks.com',
