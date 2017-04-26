@@ -11,8 +11,19 @@ function findSum(num10, string8, one) {
 
 findSum(num10, string8, one);
 
+
+
 //2. write a loop that will log only numbers divisible by 3 between 20 - 100
 
+function findNumbers() {
+    var findDivisible = [];
+    for (var i = 20; i < 101; i++) {
+        if (i % 3 == 0) {
+            findDivisible.push(i);
+        } 
+    }  console.log(findDivisible);
+}
+findNumbers();
 
 
 //3. find the class average given the following test scores
