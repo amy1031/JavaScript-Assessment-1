@@ -11,6 +11,8 @@ me.name = "Amy";
 me.age = 27;
 me['hair color'] = "Light Brown";
 
-console.log(me);
 
 //2. Iterate over the object to console.log the propery or key names. 
+console.log(me.name);
+console.log(me.age);
+console.log(me['hair color']);
