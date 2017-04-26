@@ -35,7 +35,22 @@ function findA(jsHistory) {
 }
 findA(jsHistory);
 
+
 //3. Given the following sentence: Uppercase the entire word scream each time it appears in the sentence 
 //I SCREAM, you SCREAM, we all SCREAM for icecream
 
 var text = 'I scream, you scream, we all scream for icecream';
+
+function uppercaseScream(text) {
+    var sentenceSplit = text.split(" ");
+    var newSentence = [];
+    var joinSentence = [];
+
+    for (var i = 0; i < sentenceSplit.length; i++) {
+        var replaceScream = "";
+        replaceScream = sentenceSplit[i].replace("scream", "SCREAM");
+        newSentence.push(replaceScream);
+    } joinSentence = newSentence.join(" ");
+    console.log(joinSentence);
+} 
+uppercaseScream(text);
