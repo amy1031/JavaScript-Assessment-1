@@ -2,6 +2,22 @@
  // careful not to uppercase the i in the word pair
 var sentence = 'When i went to the mall i bought a pair of shoes.';
 
+function uppercase(sentence) {
+     var sentenceSplit = sentence.split(" ");
+     var newSentence = [];
+     var joinSentence = [];
+     for (var i = 0; i < sentenceSplit.length; i++) {
+         var findI = sentenceSplit[i];
+         if (findI.length < 2) {
+             findI = findI.replace('i', "I");
+         }
+         newSentence.push(findI);        
+     } joinSentence = newSentence.join(" ");
+     console.log(joinSentence);
+ }
+
+ uppercase(sentence);
+
 
 
 //2. The history of JavaScript is interesting but how many times does the letter a appear? Find a way to count both upper and lower case A's
