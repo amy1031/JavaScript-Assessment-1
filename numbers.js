@@ -26,6 +26,18 @@ function findNumbers() {
 findNumbers();
 
 
+
 //3. find the class average given the following test scores
 
 var scores = [88, 84, 100, 92, 70, 76, 76, 84, 86, 98]; 
+
+function findAverage(scores) {
+    scoresTotal = 0;
+    average = 0;
+    for (var i = 0; i < scores.length; i++) {
+        scoresTotal += scores[i];
+    } average = scoresTotal/scores.length;
+    console.log(average);
+} 
+
+findAverage(scores);
