@@ -48,9 +48,13 @@ console.log(contacts);
 
 var mentors = [];
 
+function pushMentors(contacts) {
 for (var i = 0; i < contacts.length; i++){
 	var contact = contacts[i];
-	if (contact.title == "mentor") {
-		mentors.push(contact); 
+		if (contact.title == "mentor") {
+			mentors.push(contact); 
+		}
 	} console.log(mentors);
 }
+
+pushMentors(contacts);
