@@ -3,13 +3,17 @@ var num10 = 10;
 var string8 = '8';
 var one = 1;
 
-function findSum(num10, string8, one) {
-    string8 = parseInt(string8);
-    var sum = num10 + string8 + one;
-    console.log(sum);
+function findSum(num1, string, num2) {
+
+    var total = Number(num1) + Number(string) + Number(num2);
+    return total;
+    /*
+    string = parseInt(string);
+    var sum = num1 + string + num2;
+    console.log(sum);*/
 }
 
-findSum(num10, string8, one);
+console.log(findSum(num10, string8, one));
 
 
 

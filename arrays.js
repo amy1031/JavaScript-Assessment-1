@@ -48,11 +48,13 @@ console.log(contacts);
 
 var mentors = [];
 
-function pushMentors(contacts) {
-for (var i = 0; i < contacts.length; i++){
-	var contact = contacts[i];
+function pushMentors(contactsObj) {
+for (var i = 0; i < contactsObj.length; i++){
+	var contact = contactsObj[i];
 		if (contact.title == "mentor") {
+			contacts.splice(i, 1);
 			mentors.push(contact); 
+			i--;
 		}
 	} console.log(mentors);
 }

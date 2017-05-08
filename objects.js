@@ -13,6 +13,9 @@ me['hair color'] = "Light Brown";
 
 
 //2. Iterate over the object to console.log the propery or key names. 
-console.log(me.name);
-console.log(me.age);
-console.log(me['hair color']);
+for (var key in me) {
+	if(me.hasOwnProperty(key)) {
+		var elem = me[key]
+		console.log(key + ": " + elem)
+	}
+}

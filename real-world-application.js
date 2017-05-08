@@ -61,8 +61,8 @@ var crayola1990 = [
 	'Antique Brass'
 ];
 
-function editCrayons(crayola1990) {
- for (var i = 0; i < crayola1990.length; i++) {
+function editCrayons(arr) {
+ for (var i = 0; i < arr.length; i++) {
 	 var crayon = crayola1990[i].toLowerCase();
 	 var replace = crayon.replace(/ /g, "-");
 	 console.log(replace);
